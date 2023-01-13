@@ -6,7 +6,26 @@ import AddTask from "./components/AddTask";
 function App() {
   const [showAddTask, setShowAddTask] = useState(false)
 
-  const [tasks, setTasks] = useState([])
+  const [tasks, setTasks] = useState([
+    {
+      id: 1,
+      text: 'hoop till midday',
+      day: 'Feb 5th at 7:00 am',
+      reminder: true,
+    },
+    {
+      id: 2,
+      text: 'Meeting at School',
+      day: 'Feb 6th at 1:30 pm',
+      reminder: true,
+    },
+    {
+      id: 3,
+      text: 'Food Shopping',
+      day: 'Feb 5th at 2:30 pm',
+      reminder: false,
+    }
+  ])
 
   // Add Task
   const addTask = (task) => {
@@ -82,3 +101,5 @@ export default App;
     // u gone have some default json in db.json.. clear most key-values
     // and create your DB in json format! u gerrit!
 */
+
+// the json db provies for IDs (like an actual server). so no need to manually come up with id's
