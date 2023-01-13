@@ -14,7 +14,7 @@ Header.defaultProps = {
   title: 'Task Tracker',
 }
 
-// CSS in Js
+// this like a variable for CSS: used on line 7
 const headingStyle = {
   color: '#000',
   background: 'none',

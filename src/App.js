@@ -6,26 +6,7 @@ import AddTask from "./components/AddTask";
 function App() {
   const [showAddTask, setShowAddTask] = useState(false)
 
-  const [tasks, setTasks] = useState([
-    {
-      id: 1,
-      text: 'Doctors Appointment',
-      day: 'Feb 5th at 2:30pm',
-      reminder: true,
-    },
-    {
-      id: 2,
-      text: 'Meeting at School',
-      day: 'Feb 6th at 1:30pm',
-      reminder: true,
-    },
-    {
-      id: 3,
-      text: 'Food Shopping',
-      day: 'Feb 5th at 2:30pm',
-      reminder: false,
-    }
-  ])
+  const [tasks, setTasks] = useState([])
 
   // Add Task
   const addTask = (task) => {
@@ -97,4 +78,7 @@ export default App;
     "server": "json-server --watch db.json --port 5000"
     // you'll be using port 5000, since 3000 like the default thing
     // and 'db.json' like the name of the file
- */
+
+    // u gone have some default json in db.json.. clear most key-values
+    // and create your DB in json format! u gerrit!
+*/
