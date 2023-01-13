@@ -82,3 +82,5 @@ export default App;
     // u gone have some default json in db.json.. clear most key-values
     // and create your DB in json format! u gerrit!
 */
+
+// the json db provies for IDs (like an actual server). so no need to manually come up with id's
