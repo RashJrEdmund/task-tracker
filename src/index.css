@@ -9,6 +9,10 @@ body {
     sans-serif;
 }
 
+:root {
+  --my-trans: 0.5s;
+}
+
 .container {
   background-color: #008000;
   max-width: 400px;
@@ -36,10 +40,87 @@ button {
   padding: 10px 15px;
   border-radius: 3px;
   box-shadow: 0 0 5px #000;
+  transition: var(--my-trans);
+}
+
+button:hover {
+  font-size: 20px;
+}
+
+.add-form {
+  width: 100%;
+}
+
+.add-form .form-control {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+}
+
+.form-control input {
+  background: none;
+  border: 1px solid #333;
+  border-radius: 5px;
+  height: 40px;
+  margin: 5px 0;
+  padding: 5px;
+  font-size: 17px;
+}
+
+.form-control input::placeholder {
+  color: #222;
+}
+
+.add-form .form-control-check {
+  flex-direction: row;
+  height: fit-content;
+}
+
+
+.form-control-check input {
+  margin: 0 auto;
+  width: 20px;
+  height: 20px;
+}
+
+.add-form > input {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  height: 40px;
+  border-radius: 5px;
+  margin: 10px 0 20px;
+  width: 100%;
+  transition: var(--my-trans);
+}
+
+.add-form > input:hover {
+  background-color: #00aaff;
+  color: #000;
 }
 
 .task {
   background-color: #9999998f;
   margin: 5px 0;
-  padding: 0 15px;
+  padding: 15px 15px 0;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  border-radius: 10px;
+  transition: var(--my-trans);
+}
+
+.task:hover {
+  transform: translate(9px);
+  box-shadow: 0 0 10px #222;
+}
+
+.task.reminder {
+  border: 0.5px solid #00aaff; /* #00ff6c */
+  border-left: 10px solid #00aaff;
+}
+
+.task .sub1 h3 {
+  margin: 0;
 }
